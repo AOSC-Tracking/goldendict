@@ -2,6 +2,10 @@ TEMPLATE = app
 TARGET = goldendict
 VERSION = 1.5.0+git
 
+QMAKE_CXXFLAGS += $$(CXXFLAGS)
+QMAKE_CFLAGS += $$(CFLAGS)
+QMAKE_LFLAGS += $$(LDFLAGS)
+
 # Generate version file. We do this here and in a build rule described later.
 # The build rule is required since qmake isn't run each time the project is
 # rebuilt; and doing it here is required too since any other way the RCC
