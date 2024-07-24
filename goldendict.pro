@@ -58,7 +58,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 QT += sql
 CONFIG += exceptions \
     rtti \
-    stl
+    stl nostrip
 OBJECTS_DIR = build
 UI_DIR = build
 MOC_DIR = build
